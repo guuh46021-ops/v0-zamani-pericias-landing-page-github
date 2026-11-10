@@ -15,7 +15,7 @@ const trustIndicators = [
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-[#F5F7FA] via-white to-[#F5F7FA]">
+    <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-gradient-to-br from-[#F5F7FA] via-white to-[#F5F7FA]">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 right-20 w-96 h-96 bg-[#0F2D52] rounded-full blur-3xl" />
@@ -94,7 +94,7 @@ export function HeroSection() {
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-[#0F2D52]/10">
               <Image
                 src="/images/consultoria-pericial.png"
-                alt="Perita contábil e advogado analisam documentos em uma reunião de trabalho"
+                alt="Mulher aposentada conversa com especialista sobre documentos de aposentadoria"
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"

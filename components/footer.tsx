@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin, Instagram, Linkedin, Facebook } from "lucide-react"
 
 export function Footer() {
@@ -8,14 +9,16 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 bg-[#C9A227] rounded-lg flex items-center justify-center">
-                <span className="text-[#0F2D52] font-bold text-2xl">Z</span>
-              </div>
-              <div>
-                <span className="text-white font-bold text-xl">Zamani</span>
-                <span className="text-white/70 text-sm block -mt-1">Perícias e Cálculos</span>
-              </div>
+            <Link href="/" className="mb-4 inline-flex rounded-lg bg-white" aria-label="Página inicial Zamani">
+              <span className="relative block h-24 w-64 overflow-hidden rounded-lg">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-15%20at%2014.37.29-AMtuzLBia90CsIP0da5Pl0rnQ14k93.jpeg"
+                  alt="Zamani — especialista em perícia judicial e aposentadoria"
+                  fill
+                  sizes="256px"
+                  className="object-cover object-[center_52%]"
+                />
+              </span>
             </Link>
             <p className="text-white/70 mb-6 max-w-md">
               Oferecemos suporte técnico especializado para advogados, empresas e pessoas físicas 
@@ -97,7 +100,9 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-[#C9A227] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="text-white/70">E-mail</div>
-                  <div className="text-white">contato@zamani.com.br</div>
+                  <a href="mailto:contato@zamanipericiasecalculos.com.br" className="break-all text-white hover:text-[#C9A227] transition-colors">
+                    contato@zamanipericiasecalculos.com.br
+                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">

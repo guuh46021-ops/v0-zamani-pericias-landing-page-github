@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Send, Loader2, MapPin, Phone, MessageCircle } from "lucide-react"
+import { Send, Loader2, MapPin, Phone, MessageCircle, Mail } from "lucide-react"
 
 const serviceOptions = [
   "Cálculos Trabalhistas",
@@ -64,7 +64,7 @@ export function ContactFormSection() {
             <div className="relative h-64 sm:h-72">
               <Image
                 src="/images/atendimento-especializado.png"
-                alt="Especialista explica cálculos a uma cliente durante atendimento presencial"
+                alt="Casal de idosos recebe orientação sobre benefícios previdenciários"
                 fill
                 sizes="(max-width: 1024px) 100vw, 40vw"
                 className="object-cover"
@@ -104,6 +104,10 @@ export function ContactFormSection() {
                 <a href="https://wa.me/5511933091409" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-white hover:text-[#C9A227] transition-colors">
                   <MessageCircle className="h-4 w-4 text-[#C9A227]" />
                   (11) 93309-1409
+                </a>
+                <a href="mailto:contato@zamanipericiasecalculos.com.br" className="flex min-w-0 items-start gap-2 break-all text-sm text-white hover:text-[#C9A227] transition-colors">
+                  <Mail className="mt-0.5 h-4 w-4 shrink-0 text-[#C9A227]" />
+                  contato@zamanipericiasecalculos.com.br
                 </a>
               </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -20,15 +21,18 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-[#0F2D52] rounded-lg flex items-center justify-center">
-              <span className="text-[#C9A227] font-bold text-xl">Z</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="text-[#0F2D52] font-bold text-lg">Zamani</span>
-              <span className="text-[#1D4E89] text-sm block -mt-1">Perícias e Cálculos</span>
+          <Link href="/" className="flex shrink-0 items-center" aria-label="Página inicial Zamani">
+            <div className="relative h-24 w-64 overflow-hidden">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-15%20at%2014.37.29-AMtuzLBia90CsIP0da5Pl0rnQ14k93.jpeg"
+                alt="Zamani — especialista em perícia judicial e aposentadoria"
+                fill
+                priority
+                sizes="256px"
+                className="object-cover object-[center_52%]"
+              />
             </div>
           </Link>
 
