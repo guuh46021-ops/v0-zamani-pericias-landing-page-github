@@ -36,14 +36,14 @@ export function HeroSection() {
               Excelência em Perícias Judiciais
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-4xl lg:text-6xl font-bold text-[#07563D] leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-4xl lg:text-6xl font-bold text-black leading-tight mb-6">
               Perícias e Cálculos Judiciais com{" "}
-              <span className="text-[#0F7F52]">Precisão</span>,{" "}
-              <span className="text-[#59645F]">Credibilidade</span> e{" "}
-              <span className="text-[#07563D]">Segurança Técnica</span>
+              <span className="text-[#07633e]">Precisão</span>,{" "}
+              <span className="text-[#a07200]">Credibilidade</span> e{" "}
+              <span className="text-black">Segurança Técnica</span>
             </h1>
 
-            <p className="text-lg text-[#59645F] mb-8 max-w-xl mx-auto md:mx-0 leading-relaxed">
+            <p className="text-base text-[#59645F] mb-8 max-w-xl mx-auto md:mx-0 leading-relaxed">
               Atendimento especializado para advogados, empresas e pessoas físicas em todo o Brasil. 
               Elaboramos laudos, pareceres e cálculos judiciais com rigor técnico, agilidade e total conformidade legal.
             </p>
