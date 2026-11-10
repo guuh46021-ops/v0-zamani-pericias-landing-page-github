@@ -12,7 +12,7 @@ const benefits = [
 
 export function LeadMagnetSection() {
   return (
-    <section className="py-20 bg-[#0F2D52]">
+    <section className="py-20 overflow-hidden bg-[#0F2D52]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -88,7 +88,7 @@ export function LeadMagnetSection() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-4 -right-4 bg-[#C9A227] text-[#0F2D52] px-4 py-2 rounded-full font-bold text-sm shadow-lg"
+              className="absolute -top-4 right-0 lg:-right-4 bg-[#C9A227] text-[#0F2D52] px-4 py-2 rounded-full font-bold text-sm shadow-lg"
             >
               100% Gratuito
             </motion.div>

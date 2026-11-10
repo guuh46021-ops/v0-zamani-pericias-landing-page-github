@@ -38,8 +38,9 @@ export function CTASection() {
               <ArrowRight size={20} />
             </Link>
             <Link
-              href="https://wa.me/5500000000000"
+              href="https://wa.me/5511933091409"
               target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-lg transition-all"
             >
               <MessageCircle size={20} />

@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Send, Loader2 } from "lucide-react"
+import Image from "next/image"
+import { Send, Loader2, MapPin, Phone, MessageCircle } from "lucide-react"
 
 const serviceOptions = [
   "Cálculos Trabalhistas",
@@ -33,7 +34,7 @@ export function ContactFormSection() {
 
   return (
     <section id="contato" className="py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -52,13 +53,69 @@ export function ContactFormSection() {
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-[#F5F7FA] rounded-2xl p-6 sm:p-8"
-        >
+        <div className="grid items-stretch gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <motion.aside
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="overflow-hidden rounded-2xl bg-[#0F2D52] text-white shadow-lg"
+          >
+            <div className="relative h-64 sm:h-72">
+              <Image
+                src="/images/atendimento-especializado.png"
+                alt="Especialista explica cálculos a uma cliente durante atendimento presencial"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F2D52]/75 via-transparent to-transparent" />
+              <div className="absolute bottom-5 left-6 right-6">
+                <span className="rounded-full bg-[#C9A227] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0F2D52]">
+                  Atendimento próximo e especializado
+                </span>
+              </div>
+            </div>
+            <div className="space-y-5 p-6 sm:p-8">
+              <div>
+                <h3 className="text-xl font-bold">Estamos na Av. Paulista</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/75">
+                  Conte com uma equipe acessível e dedicada a entender os detalhes do seu caso.
+                </p>
+              </div>
+              <address className="flex items-start gap-3 not-italic">
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-[#C9A227]" />
+                <a
+                  href="https://maps.google.com/?q=Av.+Paulista,+1636,+Sala+1105,+São+Paulo,+SP,+01310-200"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm leading-relaxed text-white hover:text-[#C9A227] transition-colors"
+                >
+                  Av. Paulista, 1636, Sala 1105<br />
+                  Paulista Corporate - Cerqueira Cesar<br />
+                  São Paulo - SP, CEP 01310-200
+                </a>
+              </address>
+              <div className="grid gap-3 border-t border-white/15 pt-5 sm:grid-cols-2">
+                <a href="tel:+551121102752" className="flex items-center gap-2 text-sm text-white hover:text-[#C9A227] transition-colors">
+                  <Phone className="h-4 w-4 text-[#C9A227]" />
+                  (11) 2110-2752
+                </a>
+                <a href="https://wa.me/5511933091409" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-white hover:text-[#C9A227] transition-colors">
+                  <MessageCircle className="h-4 w-4 text-[#C9A227]" />
+                  (11) 93309-1409
+                </a>
+              </div>
+            </div>
+          </motion.aside>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="bg-[#F5F7FA] rounded-2xl p-6 sm:p-8"
+          >
           {isSubmitted ? (
             <div className="text-center py-12">
               <div className="w-16 h-16 bg-[#C9A227] rounded-full flex items-center justify-center mx-auto mb-6">
@@ -172,7 +229,8 @@ export function ContactFormSection() {
               </p>
             </form>
           )}
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   )

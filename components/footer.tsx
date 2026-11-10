@@ -78,8 +78,19 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-[#C9A227] flex-shrink-0 mt-0.5" />
                 <div>
+                  <div className="text-white/70">Telefone para recados</div>
+                  <a href="tel:+551121102752" className="text-white hover:text-[#C9A227] transition-colors">
+                    (11) 2110-2752
+                  </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone className="w-5 h-5 text-[#C9A227] flex-shrink-0 mt-0.5" />
+                <div>
                   <div className="text-white/70">WhatsApp</div>
-                  <div className="text-white">(00) 00000-0000</div>
+                  <a href="https://wa.me/5511933091409" target="_blank" rel="noreferrer" className="text-white hover:text-[#C9A227] transition-colors">
+                    (11) 93309-1409
+                  </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -92,8 +103,17 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-[#C9A227] flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-white/70">Atendimento</div>
-                  <div className="text-white">Todo o Brasil</div>
+                  <div className="text-white/70">Endereço</div>
+                  <a
+                    href="https://maps.google.com/?q=Av.+Paulista,+1636,+Sala+1105,+São+Paulo,+SP,+01310-200"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white hover:text-[#C9A227] transition-colors"
+                  >
+                    Av. Paulista, 1636, Sala 1105<br />
+                    Paulista Corporate - Cerqueira Cesar<br />
+                    São Paulo - SP, CEP 01310-200
+                  </a>
                 </div>
               </li>
             </ul>

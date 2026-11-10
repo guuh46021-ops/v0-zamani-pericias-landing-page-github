@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { CheckCircle, ArrowRight, MessageCircle } from "lucide-react"
 
@@ -22,33 +23,33 @@ export function HeroSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center lg:text-left"
+            className="text-center md:text-left"
           >
             <div className="inline-flex items-center gap-2 bg-[#0F2D52]/10 text-[#0F2D52] px-4 py-2 rounded-full text-sm font-medium mb-6">
               <span className="w-2 h-2 bg-[#C9A227] rounded-full" />
               Excelência em Perícias Judiciais
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0F2D52] leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-4xl lg:text-6xl font-bold text-[#0F2D52] leading-tight mb-6">
               Perícias e Cálculos Judiciais com{" "}
               <span className="text-[#C9A227]">Precisão</span>,{" "}
               <span className="text-[#1D4E89]">Credibilidade</span> e{" "}
               <span className="text-[#0F2D52]">Segurança Técnica</span>
             </h1>
 
-            <p className="text-lg text-[#1D4E89] mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-lg text-[#1D4E89] mb-8 max-w-xl mx-auto md:mx-0 leading-relaxed">
               Atendimento especializado para advogados, empresas e pessoas físicas em todo o Brasil. 
               Elaboramos laudos, pareceres e cálculos judiciais com rigor técnico, agilidade e total conformidade legal.
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10">
+            <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row gap-4 justify-center md:justify-start mb-10">
               <Link
                 href="#contato"
                 className="inline-flex items-center justify-center gap-2 bg-[#C9A227] hover:bg-[#D4B64A] text-[#0F2D52] px-8 py-4 rounded-lg font-bold text-lg transition-all hover:shadow-lg hover:shadow-[#C9A227]/30"
@@ -57,8 +58,9 @@ export function HeroSection() {
                 <ArrowRight size={20} />
               </Link>
               <Link
-                href="https://wa.me/5500000000000"
+                href="https://wa.me/5511933091409"
                 target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white px-8 py-4 rounded-lg font-bold text-lg transition-all hover:shadow-lg"
               >
                 <MessageCircle size={20} />
@@ -83,55 +85,30 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Image/Visual */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative hidden lg:block"
+            className="relative mx-auto w-full max-w-xl md:max-w-none"
           >
-            <div className="relative">
-              {/* Main Card */}
-              <div className="bg-white rounded-2xl shadow-2xl p-8 border border-[#E2E8F0]">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 bg-[#0F2D52] rounded-xl flex items-center justify-center">
-                    <span className="text-[#C9A227] font-bold text-3xl">Z</span>
-                  </div>
-                  <div>
-                    <h3 className="text-[#0F2D52] font-bold text-xl">Zamani</h3>
-                    <p className="text-[#1D4E89] text-sm">Perícias e Cálculos</p>
-                  </div>
-                </div>
-                
-                {/* Stats Grid */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-[#F5F7FA] rounded-xl p-4 text-center">
-                    <div className="text-3xl font-bold text-[#0F2D52]">+500</div>
-                    <div className="text-sm text-[#1D4E89]">Análises Realizadas</div>
-                  </div>
-                  <div className="bg-[#F5F7FA] rounded-xl p-4 text-center">
-                    <div className="text-3xl font-bold text-[#C9A227]">100%</div>
-                    <div className="text-sm text-[#1D4E89]">Conformidade Legal</div>
-                  </div>
-                  <div className="bg-[#F5F7FA] rounded-xl p-4 text-center">
-                    <div className="text-3xl font-bold text-[#0F2D52]">27</div>
-                    <div className="text-sm text-[#1D4E89]">Estados Atendidos</div>
-                  </div>
-                  <div className="bg-[#F5F7FA] rounded-xl p-4 text-center">
-                    <div className="text-3xl font-bold text-[#C9A227]">98%</div>
-                    <div className="text-sm text-[#1D4E89]">Satisfação</div>
-                  </div>
-                </div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-2xl ring-1 ring-[#0F2D52]/10">
+              <Image
+                src="/images/consultoria-pericial.png"
+                alt="Perita contábil e advogado analisam documentos em uma reunião de trabalho"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F2D52]/75 via-transparent to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 text-left">
+                <span className="mb-3 inline-flex rounded-full bg-[#C9A227] px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0F2D52]">
+                  Técnica com olhar humano
+                </span>
+                <p className="max-w-md text-xl font-semibold leading-snug text-white sm:text-2xl">
+                  Cada caso merece atenção, clareza e uma análise cuidadosa.
+                </p>
               </div>
-
-              {/* Floating Badge */}
-              <motion.div
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-4 -right-4 bg-[#C9A227] text-[#0F2D52] px-4 py-2 rounded-full font-bold text-sm shadow-lg"
-              >
-                Análise Gratuita
-              </motion.div>
             </div>
           </motion.div>
         </div>
