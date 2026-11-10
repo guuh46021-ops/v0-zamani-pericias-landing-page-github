@@ -48,13 +48,13 @@ export function DifferentialsSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-4">
+            <span className="inline-block text-[#0F7F52] font-semibold text-sm uppercase tracking-wider mb-4">
               Diferenciais
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D52] mb-6">
-              Por Que Escolher a <span className="text-[#C9A227]">Zamani</span>?
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#07563D] mb-6">
+              Por Que Escolher a <span className="text-[#0F7F52]">Zamani</span>?
             </h2>
-            <p className="text-lg text-[#1D4E89] mb-8">
+            <p className="text-lg text-[#59645F] mb-8">
               Nossa equipe combina expertise técnica com comprometimento para entregar 
               resultados que fazem a diferença nos seus processos judiciais.
             </p>
@@ -62,16 +62,16 @@ export function DifferentialsSection() {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#0F2D52]">+500</div>
-                <div className="text-sm text-[#1D4E89]">Análises</div>
+                <div className="text-4xl font-bold text-[#07563D]">+500</div>
+                <div className="text-sm text-[#59645F]">Análises</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#C9A227]">98%</div>
-                <div className="text-sm text-[#1D4E89]">Satisfação</div>
+                <div className="text-4xl font-bold text-[#0F7F52]">98%</div>
+                <div className="text-sm text-[#59645F]">Satisfação</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-[#0F2D52]">27</div>
-                <div className="text-sm text-[#1D4E89]">Estados</div>
+                <div className="text-4xl font-bold text-[#07563D]">27</div>
+                <div className="text-sm text-[#59645F]">Estados</div>
               </div>
             </div>
           </motion.div>
@@ -85,13 +85,13 @@ export function DifferentialsSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-[#F5F7FA] rounded-xl p-5 hover:bg-[#0F2D52] group transition-colors duration-300"
+                className="bg-[#F3F7F4] rounded-xl p-5 hover:bg-[#07563D] group transition-colors duration-300"
               >
-                <item.icon className="w-8 h-8 text-[#C9A227] mb-3" />
-                <h3 className="text-lg font-bold text-[#0F2D52] group-hover:text-white mb-2 transition-colors">
+                <item.icon className="w-8 h-8 text-[#0F7F52] mb-3" />
+                <h3 className="text-lg font-bold text-[#07563D] group-hover:text-white mb-2 transition-colors">
                   {item.title}
                 </h3>
-                <p className="text-sm text-[#1D4E89] group-hover:text-white/80 transition-colors">
+                <p className="text-sm text-[#59645F] group-hover:text-white/80 transition-colors">
                   {item.description}
                 </p>
               </motion.div>

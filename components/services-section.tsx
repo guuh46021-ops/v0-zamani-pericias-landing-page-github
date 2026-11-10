@@ -63,7 +63,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="servicos" className="py-20 bg-[#F5F7FA]">
+    <section id="servicos" className="py-20 bg-[#F3F7F4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,12 +72,12 @@ export function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-[#0F7F52] font-semibold text-sm uppercase tracking-wider mb-4">
             Nossos Serviços
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D52] mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#07563D] mb-4">
             Soluções Especializadas para Demandas<br />
-            <span className="text-[#1D4E89]">Judiciais e Extrajudiciais</span>
+            <span className="text-[#59645F]">Judiciais e Extrajudiciais</span>
           </h2>
         </motion.div>
 
@@ -89,13 +89,13 @@ export function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#C9A227]/30"
+              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#B7A46A]/30"
             >
-              <div className="w-14 h-14 bg-[#0F2D52] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#C9A227] transition-colors">
-                <service.icon className="w-7 h-7 text-[#C9A227] group-hover:text-[#0F2D52] transition-colors" />
+              <div className="w-14 h-14 bg-[#07563D] rounded-xl flex items-center justify-center mb-5 group-hover:bg-[#B7A46A] transition-colors">
+                <service.icon className="w-7 h-7 text-[#B7A46A] group-hover:text-[#07563D] transition-colors" />
               </div>
-              <h3 className="text-xl font-bold text-[#0F2D52] mb-3">{service.title}</h3>
-              <p className="text-[#1D4E89] leading-relaxed">{service.description}</p>
+              <h3 className="text-xl font-bold text-[#07563D] mb-3">{service.title}</h3>
+              <p className="text-[#59645F] leading-relaxed">{service.description}</p>
             </motion.div>
           ))}
         </div>

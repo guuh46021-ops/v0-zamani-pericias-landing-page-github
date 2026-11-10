@@ -39,14 +39,14 @@ function FAQItem({
   onToggle: () => void
 }) {
   return (
-    <div className="border-b border-[#E2E8F0] last:border-0">
+    <div className="border-b border-[#DDE7E0] last:border-0">
       <button
         onClick={onToggle}
         className="w-full flex items-center justify-between py-5 text-left"
       >
-        <span className="text-lg font-semibold text-[#0F2D52] pr-8">{question}</span>
+        <span className="text-lg font-semibold text-[#07563D] pr-8">{question}</span>
         <ChevronDown 
-          className={`w-5 h-5 text-[#C9A227] flex-shrink-0 transition-transform duration-300 ${
+          className={`w-5 h-5 text-[#0F7F52] flex-shrink-0 transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`} 
         />
@@ -57,7 +57,7 @@ function FAQItem({
         transition={{ duration: 0.3 }}
         className="overflow-hidden"
       >
-        <p className="pb-5 text-[#1D4E89] leading-relaxed">{answer}</p>
+        <p className="pb-5 text-[#59645F] leading-relaxed">{answer}</p>
       </motion.div>
     </div>
   )
@@ -67,7 +67,7 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (
-    <section id="faq" className="py-20 bg-[#F5F7FA]">
+    <section id="faq" className="py-20 bg-[#F3F7F4]">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,11 +76,11 @@ export function FAQSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="inline-block text-[#C9A227] font-semibold text-sm uppercase tracking-wider mb-4">
+          <span className="inline-block text-[#0F7F52] font-semibold text-sm uppercase tracking-wider mb-4">
             Dúvidas
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#0F2D52] mb-4">
-            Perguntas <span className="text-[#C9A227]">Frequentes</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#07563D] mb-4">
+            Perguntas <span className="text-[#0F7F52]">Frequentes</span>
           </h2>
         </motion.div>
 

@@ -42,7 +42,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-[#0F2D52] hover:text-[#C9A227] transition-colors text-sm font-medium"
+                className="text-[#07563D] hover:text-[#0F7F52] transition-colors text-sm font-medium"
               >
                 {link.label}
               </Link>
@@ -53,7 +53,7 @@ export function Header() {
           <div className="hidden lg:block">
             <Link
               href="#contato"
-              className="bg-[#C9A227] hover:bg-[#D4B64A] text-[#0F2D52] px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+              className="bg-[#07563D] hover:bg-[#0F7F52] text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors"
             >
               Solicitar Análise
             </Link>
@@ -62,7 +62,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-[#0F2D52]"
+            className="lg:hidden p-2 text-[#07563D]"
             aria-label="Menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -85,7 +85,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-[#0F2D52] hover:text-[#C9A227] transition-colors font-medium py-2"
+                  className="text-[#07563D] hover:text-[#0F7F52] transition-colors font-medium py-2"
                 >
                   {link.label}
                 </Link>
@@ -93,7 +93,7 @@ export function Header() {
               <Link
                 href="#contato"
                 onClick={() => setIsOpen(false)}
-                className="bg-[#C9A227] hover:bg-[#D4B64A] text-[#0F2D52] px-6 py-3 rounded-lg font-semibold text-center transition-colors mt-2"
+                className="bg-[#07563D] hover:bg-[#0F7F52] text-white px-6 py-3 rounded-lg font-semibold text-center transition-colors mt-2"
               >
                 Solicitar Análise
               </Link>

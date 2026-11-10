@@ -4,61 +4,61 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Zamani Premium Color Palette */
+  /* Zamani logo-inspired palette */
   --background: #FFFFFF;
-  --foreground: #0F2D52;
+  --foreground: #07563D;
   --card: #FFFFFF;
-  --card-foreground: #0F2D52;
+  --card-foreground: #07563D;
   --popover: #FFFFFF;
-  --popover-foreground: #0F2D52;
-  --primary: #0F2D52;
+  --popover-foreground: #07563D;
+  --primary: #07563D;
   --primary-foreground: #FFFFFF;
-  --secondary: #F5F7FA;
-  --secondary-foreground: #0F2D52;
-  --muted: #F5F7FA;
-  --muted-foreground: #1D4E89;
-  --accent: #C9A227;
-  --accent-foreground: #0F2D52;
+  --secondary: #F3F7F4;
+  --secondary-foreground: #07563D;
+  --muted: #F3F7F4;
+  --muted-foreground: #59645F;
+  --accent: #D9C993;
+  --accent-foreground: #07563D;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: #FFFFFF;
-  --border: #E2E8F0;
-  --input: #E2E8F0;
-  --ring: #1D4E89;
-  --chart-1: #0F2D52;
-  --chart-2: #1D4E89;
-  --chart-3: #C9A227;
-  --chart-4: #F5F7FA;
-  --chart-5: #0F2D52;
+  --border: #DDE7E0;
+  --input: #DDE7E0;
+  --ring: #0F7F52;
+  --chart-1: #07563D;
+  --chart-2: #0F7F52;
+  --chart-3: #B7A46A;
+  --chart-4: #F3F7F4;
+  --chart-5: #59645F;
   --radius: 0.5rem;
-  
-  /* Custom Zamani Colors */
-  --navy: #0F2D52;
-  --navy-light: #1D4E89;
-  --gold: #C9A227;
-  --gold-light: #D4B64A;
-  --gray-light: #F5F7FA;
+
+  /* Custom Zamani colors */
+  --forest: #07563D;
+  --forest-light: #0F7F52;
+  --gold: #B7A46A;
+  --gold-light: #D9C993;
+  --gray-light: #F3F7F4;
 }
 
 .dark {
-  --background: #0F2D52;
+  --background: #0B3C2E;
   --foreground: #FFFFFF;
-  --card: #1D4E89;
+  --card: #124C38;
   --card-foreground: #FFFFFF;
-  --popover: #1D4E89;
+  --popover: #124C38;
   --popover-foreground: #FFFFFF;
-  --primary: #C9A227;
-  --primary-foreground: #0F2D52;
-  --secondary: #1D4E89;
+  --primary: #D9C993;
+  --primary-foreground: #07563D;
+  --secondary: #124C38;
   --secondary-foreground: #FFFFFF;
-  --muted: #1D4E89;
-  --muted-foreground: #F5F7FA;
-  --accent: #C9A227;
-  --accent-foreground: #0F2D52;
+  --muted: #164B38;
+  --muted-foreground: #DDE7E0;
+  --accent: #C8B678;
+  --accent-foreground: #07563D;
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: #FFFFFF;
-  --border: #1D4E89;
-  --input: #1D4E89;
-  --ring: #C9A227;
+  --border: #2B6650;
+  --input: #2B6650;
+  --ring: #C8B678;
 }
 
 @theme inline {
@@ -89,8 +89,8 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
-  --color-navy: var(--navy);
-  --color-navy-light: var(--navy-light);
+  --color-forest: var(--forest);
+  --color-forest-light: var(--forest-light);
   --color-gold: var(--gold);
   --color-gold-light: var(--gold-light);
   --color-gray-light: var(--gray-light);

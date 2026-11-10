@@ -6,11 +6,11 @@ import { ArrowRight, MessageCircle } from "lucide-react"
 
 export function CTASection() {
   return (
-    <section className="py-20 bg-[#0F2D52] relative overflow-hidden">
+    <section className="py-20 bg-[#07563D] relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#C9A227] rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#1D4E89] rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#B7A46A] rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#59645F] rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -22,8 +22,8 @@ export function CTASection() {
           className="text-center"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-            Precisa de <span className="text-[#C9A227]">Perícia</span> ou{" "}
-            <span className="text-[#C9A227]">Cálculo Judicial</span>?
+            Precisa de <span className="text-[#D9C993]">Perícia</span> ou{" "}
+            <span className="text-[#D9C993]">Cálculo Judicial</span>?
           </h2>
           <p className="text-xl text-white/80 mb-10 max-w-2xl mx-auto">
             Fale agora com um especialista e receba uma análise inicial gratuita.
@@ -32,7 +32,7 @@ export function CTASection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="#contato"
-              className="inline-flex items-center justify-center gap-2 bg-[#C9A227] hover:bg-[#D4B64A] text-[#0F2D52] px-8 py-4 rounded-lg font-bold text-lg transition-all hover:shadow-lg hover:shadow-[#C9A227]/30"
+              className="inline-flex items-center justify-center gap-2 bg-[#D9C993] hover:bg-[#E4D7B1] text-[#07563D] px-8 py-4 rounded-lg font-bold text-lg transition-all hover:shadow-lg hover:shadow-[#B7A46A]/30"
             >
               Solicitar Orçamento
               <ArrowRight size={20} />
