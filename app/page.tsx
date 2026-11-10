@@ -4,7 +4,6 @@ import { SocialProofSection } from "@/components/social-proof-section"
 import { ServicesSection } from "@/components/services-section"
 import { DifferentialsSection } from "@/components/differentials-section"
 import { HowItWorksSection } from "@/components/how-it-works-section"
-import { LeadMagnetSection } from "@/components/lead-magnet-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
@@ -22,7 +21,6 @@ export default function HomePage() {
       <ServicesSection />
       <DifferentialsSection />
       <HowItWorksSection />
-      <LeadMagnetSection />
       <TestimonialsSection />
       <FAQSection />
       <CTASection />

@@ -24,14 +24,14 @@ export function Header() {
         <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center" aria-label="Página inicial Zamani">
-            <div className="relative h-24 w-64 overflow-hidden">
+            <div className="relative h-24 w-40 overflow-hidden">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-15%20at%2014.37.29-AMtuzLBia90CsIP0da5Pl0rnQ14k93.jpeg"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Design%20sem%20nome%20%2840%29-ONUwMMFIFt86c5l0KR07DgVJaSo8Wn.png"
                 alt="Zamani — especialista em perícia judicial e aposentadoria"
                 fill
                 priority
-                sizes="256px"
-                className="object-cover object-[center_52%]"
+                sizes="160px"
+                className="object-contain"
               />
             </div>
           </Link>

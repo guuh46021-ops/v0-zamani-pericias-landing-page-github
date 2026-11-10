@@ -10,13 +10,13 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="lg:col-span-2">
             <Link href="/" className="mb-4 inline-flex rounded-lg bg-white" aria-label="Página inicial Zamani">
-              <span className="relative block h-24 w-64 overflow-hidden rounded-lg">
+              <span className="relative block h-24 w-40 overflow-hidden rounded-lg">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-09-15%20at%2014.37.29-AMtuzLBia90CsIP0da5Pl0rnQ14k93.jpeg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Design%20sem%20nome%20%2840%29-ONUwMMFIFt86c5l0KR07DgVJaSo8Wn.png"
                   alt="Zamani — especialista em perícia judicial e aposentadoria"
                   fill
-                  sizes="256px"
-                  className="object-cover object-[center_52%]"
+                  sizes="160px"
+                  className="object-contain"
                 />
               </span>
             </Link>
